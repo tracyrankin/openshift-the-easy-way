@@ -4,7 +4,7 @@ The installer provides a guided experience for provisioning the cluster on a par
 
 ## Prerequisites
 
-In prior step, we downloaded the following:
+In the prior step, we downloaded the following:
 
 1. installer (e.g. openshift-install-linux-amd64)
 1. pull secret
@@ -23,7 +23,7 @@ The following demonstrates an install using the wizard as an example.
 ? Email Address user@example.com
 ? Password [? for help] ********
 ? SSH Public Key ~/.ssh/id_rsa.pub
-? Base Domain dev.openshift.com
+? Base Domain dev.example.com
 ? Cluster Name my-cluster
 ? Pull Secret [? for help] ******
 ? Platform aws
@@ -56,7 +56,7 @@ export OPENSHIFT_INSTALL_EMAIL_ADDRESS=user@example.com
 export OPENSHIFT_INSTALL_CLUSTER_NAME=my-cluster
 export OPENSHIFT_INSTALL_PASSWORD=my-password
 export OPENSHIFT_INSTALL_AWS_REGION=us-east-2
-export OPENSHIFT_INSTALL_BASE_DOMAIN=devcluster.openshift.com
+export OPENSHIFT_INSTALL_BASE_DOMAIN=devcluster.example.com
 ./openshift-install-linux-amd64 create cluster
 ```
 
