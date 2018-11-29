@@ -60,19 +60,8 @@ export OPENSHIFT_INSTALL_BASE_DOMAIN=devcluster.openshift.com
 ./openshift-install-linux-amd64 create cluster
 ```
 
-### Libvirt (Developer Mode)
+### OpenStack
 
-#### Linux
+coming soon...
 
-```
-export OPENSHIFT_INSTALL_PULL_SECRET_PATH=~/Downloads/pull-secret
-export OPENSHIFT_INSTALL_SSH_PUB_KEY_PATH=~/.ssh/id_rsa.pub
-export OPENSHIFT_INSTALL_PLATFORM=libvirt
-export OPENSHIFT_INSTALL_EMAIL_ADDRESS=user@example.com
-export OPENSHIFT_INSTALL_CLUSTER_NAME=test1
-export OPENSHIFT_INSTALL_PASSWORD=password
-export OPENSHIFT_INSTALL_LIBVIRT_URI=qemu+tcp://192.168.122.1/system
-export OPENSHIFT_INSTALL_BASE_DOMAIN=tt.testing
-./openshift-install-linux-amd64 create cluster
-```
 Next: [Exploring the Cluster](03-explore.md)
