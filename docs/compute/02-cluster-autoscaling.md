@@ -5,7 +5,7 @@ OpenShift ships an operator that can manage deployment of the Cluster Autoscaler
 The operator is installed by default and visible here:
 
 ```sh
-kubectl get deployments -n openshift-cluster-api cluster-autoscaler-operator
+oc get deployments -n openshift-cluster-api cluster-autoscaler-operator
 NAME                          DESIRED   CURRENT   UP-TO-DATE   AVAILABLE   AGE
 cluster-autoscaler-operator   1         1         1            1           1h
 ```
@@ -22,16 +22,16 @@ cores, and 256Gi of memory, and 16 gpus.
 
 
 ```sh
-kubectl create -f https://raw.githubusercontent.com/openshift/cluster-autoscaler-operator/master/examples/clusterautoscaler.yaml
+oc create -f https://raw.githubusercontent.com/openshift/cluster-autoscaler-operator/master/examples/clusterautoscaler.yaml
 ```
 
 Let's verify the autoscaler is deployed by the operator:
 
 ```sh
-kubectl get clusterautoscaler
+oc get clusterautoscaler
 NAME      AGE
 default   2m
-kubectl get deployments -n openshift-cluster-api
+oc get deployments -n openshift-cluster-api
 NAME                             DESIRED   CURRENT   UP-TO-DATE   AVAILABLE   AGE
 cluster-autoscaler-default       1         1         1            0           3m
 ```
