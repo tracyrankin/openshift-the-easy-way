@@ -15,4 +15,13 @@ chmod u+x ./openshift-install-linux-amd64
 export OPENSHIFT_INSTALL_PULL_SECRET_PATH=~/Downloads/pull-secret
 ```
 
+### Mac
+
+```
+curl -O -L https://github.com/openshift/installer/releases/download/v0.4.0/openshift-install-darwin-amd64
+chmod +x ./openshift-install-darwin-amd64
+export OPENSHIFT_INSTALL_PULL_SECRET_PATH=~/Downloads/pull-secret
+```
+
+
 Next: [Installing the Cluster](02-install.md)
